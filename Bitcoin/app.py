@@ -18,7 +18,7 @@ from plotly.offline import download_plotlyjs , init_notebook_mode , plot , iplot
 
 
 
-df = pd.read_csv(r'C:\Users\USER\Downloads\Bitcoin/bitcoin_price_Training - Training.csv')
+df = pd.read_csv(r'bitcoin_price_Training - Training.csv')
 df['Date'] = df['Date'].astype('datetime64[ns]')
 df.sort_values(by = 'Date')
 data = df.sort_index(ascending=False).reset_index()
